@@ -1,7 +1,6 @@
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
 }
 
 .grid-item {
@@ -13,3 +12,5 @@
     justify-content: center;
     align-items: center;
 }
+
+/* ENSURE 16 X 16 GRID IS GENERATED AS CURRENTLY BOTH COLUMS AND ROWS ARE WRONG
