@@ -9,6 +9,11 @@ function createGrid(rows, cols) {
     for (let i = 0; i < rows * cols; i++) {
         const div = document.createElement("div");
         div.classList.add("grid-item");
+                        
+        div.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = '#ffffff';
+        });
+
         container.appendChild(div);
     }
 }

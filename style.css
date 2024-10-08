@@ -12,7 +12,3 @@
     height: calc(100% / var(--grid-rows));
     box-sizing: border-box;
 }
-
-div:hover {
-    background-color: #ffffff;
-  }
