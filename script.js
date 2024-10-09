@@ -22,5 +22,9 @@ function createGrid(rows, cols) {
 const squaresBtn = document.createElement("button");
 squaresBtn.textContent = "Choose your grid size!";
 btnContainer.appendChild(squaresBtn);
+squaresBtn.addEventListener("click", () => {
+    alert("Button clicked!");
+  });
+
 
 createGrid(16, 16);
