@@ -23,8 +23,8 @@ const squaresBtn = document.createElement("button");
 squaresBtn.textContent = "Choose your grid size!";
 btnContainer.appendChild(squaresBtn);
 squaresBtn.addEventListener("click", () => {
-    alert("Button clicked!");
+    let rows = prompt("Please choose how many rows you would like the grid to have (max 100).");
+    let cols = prompt("Please choose how many rows you would like the grid to have (max 100).");
+    createGrid(rows, cols);
   });
 
-
-createGrid(16, 16);
