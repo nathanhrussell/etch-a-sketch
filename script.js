@@ -1,4 +1,5 @@
 const container = document.getElementById("container");
+const btnContainer = document.getElementById("btn-container");
 
 function createGrid(rows, cols) {
     container.style.setProperty("--grid-rows", rows);
@@ -17,5 +18,9 @@ function createGrid(rows, cols) {
         container.appendChild(div);
     }
 }
+
+const squaresBtn = document.createElement("button");
+squaresBtn.textContent = "Choose your grid size!";
+btnContainer.appendChild(squaresBtn);
 
 createGrid(16, 16);

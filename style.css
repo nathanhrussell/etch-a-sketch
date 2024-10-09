@@ -12,3 +12,7 @@
     height: calc(100% / var(--grid-rows));
     box-sizing: border-box;
 }
+
+#btn-container {
+    padding-bottom: 10px;
+}
