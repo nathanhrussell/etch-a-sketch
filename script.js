@@ -1,5 +1,8 @@
 const container = document.getElementById("container");
 const btnContainer = document.getElementById("btn-container");
+function getRandomColour() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
 
 function createGrid(rows, cols) {
     container.style.setProperty("--grid-rows", rows);
@@ -12,7 +15,7 @@ function createGrid(rows, cols) {
         div.classList.add("grid-item");
                         
         div.addEventListener('mouseenter', function() {
-            this.style.backgroundColor = '#ffffff';
+            this.style.backgroundColor = getRandomColour();
         });
 
         container.appendChild(div);
